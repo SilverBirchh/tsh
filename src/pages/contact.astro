@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout accent="var(--color-green-800)" title="Contact Us | TSH Services" description="Get in touch with us for any enquiries or orders.">
+  <section class="relative">
+    <!-- Background strip -->
+    <div class="absolute inset-0 bg-green-800 h-[400px]"></div>
+
+    <!-- Heading + Info -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 pt-24">
+      <h1 class="text-4xl font-bold text-white">Contact TSH Services</h1>
+      <p class="mt-4 text-white max-w-2xl mx-auto">
+        Whether you’re placing an order, asking a question, or just want to say hello — we’d love to hear from you.
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a
+          href="tel:+443033094226"
+          class="border border-white text-white font-medium px-6 py-2 rounded-full"
+        >
+          +44 3033 094226
+        </a>
+      </div>
+    </div>
+
+    <!-- FORM REPLACES IMAGE -->
+    <div class="relative z-10 max-w-3xl mx-auto mt-16 px-4">
+      <div class="bg-white text-green-900 rounded-2xl shadow-lg p-8 md:p-10">
+        <form method="POST" action="#" class="space-y-6">
+          <div>
+            <label for="name" class="block text-sm font-medium mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-green-800 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

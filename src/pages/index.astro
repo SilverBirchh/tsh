@@ -1,6 +1,9 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
+import { Image } from 'astro:assets';
+import field from '../images/field.jpg';
+import hay from '../images/hay.jpg';
 ---
 
 <BaseLayout
@@ -57,8 +60,8 @@ import { Icon } from "astro-icon/components";
           href="/forage"
           class="group block bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl"
         >
-          <img
-            src="https://placehold.co/600x400?text=Equine+Forage"
+          <Image
+            src={hay}
             alt="Bales of hay and bedding for horses"
             class="w-full h-auto object-cover aspect-video"
           />
@@ -79,8 +82,8 @@ import { Icon } from "astro-icon/components";
           href="/potatoes"
           class="group block bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl"
         >
-          <img
-            src="https://placehold.co/600x400?text=Potatoes+%26+Oil"
+          <Image
+            src={field}
             alt="Sacks of potatoes and bottles of cooking oil"
             class="w-full h-auto object-cover aspect-video"
           />
