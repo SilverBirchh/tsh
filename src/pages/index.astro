@@ -1,16 +1,101 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <BaseLayout
+  accent="var(--color-green-800)"
   title="TSH Services | Forage, Bedding & Produce Supply"
   description="TSH Services delivers top-quality forage, bedding, chipping potatoes and cooking oil to horse owners and takeaway shops."
 >
-  <section class="py-16 px-4 text-center">
-    <h1 class="text-4xl font-bold mb-4">Welcome to TSH Services</h1>
-    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
-      We provide high-quality hay, haylage, bedding, chipping potatoes and
-      cooking oil to support equine businesses and food outlets.
-    </p>
+  <div class="relative">
+    <div class="absolute inset-0">
+      <div class="h-[400px] bg-green-800"></div>
+      <div class="h-[calc(100%-400px)]"></div>
+    </div>
+
+    <!-- Hero -->
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 pt-24">
+      <h1 class="text-4xl font-bold text-white">
+        Reliable Supply for Agriculture & Food Service
+      </h1>
+      <p class="mt-4 text-white max-w-2xl mx-auto text-lg">
+        High-quality forage, haylage, bedding, chipping potatoes and cooking oil for horse owners and food outlets across the UK.
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a
+          href="/#services"
+          aria-label="See our services"
+          class="bg-lime-300 text-green-900 font-semibold px-6 py-2 rounded-full flex items-center gap-2 hover:bg-lime-200 transition"
+        >
+          <Icon name="lucide:leaf" class="w-5 h-5" />
+          Our Services
+        </a>
+        <a
+          href="tel:+443033094226"
+          class="border border-lime-300 text-lime-300 font-medium px-6 py-2 rounded-full hover:bg-lime-100/10 transition"
+        >
+          +44 3033 094226
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="relative z-10 max-w-5xl mx-auto mt-16 px-4">
+      <img src="https://placehold.co/900x400" alt="Cleaning" class="rounded-2xl shadow-lg object-cover w-full" />
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="mt-32 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-center text-3xl font-bold mb-12 text-green-900">Our Services</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Forage -->
+        <a
+          href="/forage"
+          class="group block bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl"
+        >
+          <img
+            src="https://placehold.co/600x400?text=Equine+Forage"
+            alt="Bales of hay and bedding for horses"
+            class="w-full h-auto object-cover aspect-video"
+          />
+          <div class="p-6 text-center">
+            <div
+              class="bg-green-800 text-white inline-block px-4 py-1 rounded-full text-sm font-semibold mb-3 transition-all group-hover:bg-green-700"
+            >
+              EQUINE FORAGE AND BEDDING
+            </div>
+            <p class="text-green-900 text-base font-medium">
+              Producing and delivering top quality hay, haylage and bedding to horse owners and equine businesses.
+            </p>
+          </div>
+        </a>
+
+        <!-- Potatoes & Oil -->
+        <a
+          href="/potatoes"
+          class="group block bg-white rounded-xl shadow-lg overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl"
+        >
+          <img
+            src="https://placehold.co/600x400?text=Potatoes+%26+Oil"
+            alt="Sacks of potatoes and bottles of cooking oil"
+            class="w-full h-auto object-cover aspect-video"
+          />
+          <div class="p-6 text-center">
+            <div
+              class="bg-red-700 text-white inline-block px-4 py-1 rounded-full text-sm font-semibold mb-3 transition-all group-hover:bg-red-600"
+            >
+              CHIPPING POTATOES AND COOKING OIL
+            </div>
+            <p class="text-green-900 text-base font-medium">
+              Supplying quality chipping potatoes and cooking oil to fish and chip shops, takeaway shops and more.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
   </section>
 </BaseLayout>

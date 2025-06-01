@@ -1,0 +1,223 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Chipping Potatoes & Cooking Oil | TSH Services"
+  description="Top-quality chipping potatoes and cooking oil supplied directly to fish and chip shops, takeaways, and food businesses."
+  accent="var(--color-red-800)"
+>
+  <!-- Hero -->
+  <section class="relative">
+    <div class="absolute inset-0 bg-red-800 h-[400px]"></div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 pt-24">
+      <h1 class="text-4xl font-bold text-white">
+        Chipping Potatoes & Cooking Oil
+      </h1>
+      <p class="mt-4 text-white max-w-2xl mx-auto">
+        Supplying the freshest potatoes and reliable cooking oils to shops
+        across the UK. Easy, efficient, and delivered to your door.
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a
+          href="#enquiry"
+          class="bg-white text-red-800 font-medium px-6 py-2 rounded-full"
+        >
+          Enquire Now
+        </a>
+        <a
+          href="tel:+443033094226"
+          class="border border-white text-white font-medium px-6 py-2 rounded-full"
+        >
+          +44 3033 094226
+        </a>
+      </div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto mt-16 px-4">
+      <img
+        src="https://placehold.co/900x400?text=Potato+Delivery"
+        alt="Potatoes and oil"
+        class="rounded-2xl shadow-lg object-cover w-full"
+      />
+    </div>
+  </section>
+
+  <!-- Service content -->
+  <section class="mt-32 px-4">
+    <div class="max-w-6xl mx-auto space-y-20">
+      <!-- Service Overview -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img
+          src="https://placehold.co/500x300?text=Farm+to+Shop"
+          alt="Potatoes and oil delivery"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">
+            Potato & Oil Services
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            We work directly with local farms to deliver premium-quality produce
+            to fish and chip shops and food outlets. Our reliable, friendly
+            service ensures you get the freshest ingredients with minimal hassle
+            — so you can focus on what you do best.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-red-800 font-semibold underline hover:text-red-600"
+          >
+            Enquire now →
+          </a>
+        </div>
+      </div>
+
+      <!-- Potatoes -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">
+            Premium Chipping Potatoes – From Field to Fryer
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Our potatoes are specially selected for their quality, consistency,
+            and frying performance. We work with trusted growers to harvest the
+            best varieties for the perfect chip — golden, crispy, and full of
+            flavour.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-red-800 font-semibold underline hover:text-red-600"
+          >
+            Request a delivery →
+          </a>
+        </div>
+        <img
+          src="https://placehold.co/500x300?text=Chipping+Potatoes"
+          alt="Chipping potatoes"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+      </div>
+
+      <!-- Oil Supply -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img
+          src="https://placehold.co/500x300?text=Cooking+Oil"
+          alt="Cooking oil supply"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-red-800 mb-4">
+            Reliable Cooking Oil Supply
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Alongside our potato deliveries, we provide high-performance oil
+            tailored to your needs. Choose from palm, rapeseed, or vegetable oil
+            — we’ll deliver it directly to your shop floor.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-red-800 font-semibold underline hover:text-red-600"
+          >
+            Order oil now →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR + Enquiry Card -->
+  <section id="enquiry" class="mt-32 px-4 scroll-mt-20">
+    <div
+      class="max-w-4xl mx-auto bg-white border border-red-800 rounded-2xl shadow-lg p-8 md:p-12"
+    >
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-red-900 mb-2">
+          Stay Connected & Enquire
+        </h3>
+        <p class="text-gray-700 max-w-2xl mx-auto">
+          Follow us on socials for business updates — or drop us a message and
+          we’ll get back to you quickly.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+        <!-- QR + Socials -->
+        <div class="flex-1 text-center lg:text-left">
+          <img
+            src="/qr-code.png"
+            alt="QR code linking to our socials"
+            class="w-40 h-40 mx-auto lg:mx-0 mb-4 border border-red-800 rounded-md shadow-sm"
+          />
+          <p class="text-gray-700 mb-2">Scan to follow us:</p>
+          <div
+            class="flex justify-center lg:justify-start gap-4 text-red-800 font-semibold"
+          >
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+              >Facebook</a
+            >
+            <span>·</span>
+            <a href="https://tiktok.com" target="_blank" rel="noopener"
+              >TikTok</a
+            >
+          </div>
+        </div>
+
+        <!-- Enquiry Form -->
+        <div class="flex-1 w-full">
+          <form method="POST" action="#" class="space-y-5">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-red-900 mb-1">Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-2 border border-red-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              />
+            </div>
+
+            <div>
+              <label
+                for="phone"
+                class="block text-sm font-medium text-red-900 mb-1"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-2 border border-red-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-red-900 mb-1"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full px-4 py-2 border border-red-800 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-red-800 text-white font-semibold py-2 rounded-md hover:bg-red-700 transition"
+            >
+              Submit Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

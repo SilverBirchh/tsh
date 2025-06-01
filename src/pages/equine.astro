@@ -1,0 +1,228 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  accent="var(--color-green-800)"
+  title="Equine Forage & Bedding | TSH Services"
+  description="Supplying high-quality hay, haylage, and straw bedding to horse owners and equine businesses across the UK."
+>
+  <!-- Hero section (reuse pattern) -->
+  <div class="relative">
+    <div class="absolute inset-0">
+      <div class="h-[400px] bg-green-800"></div>
+      <div class="h-[calc(100%-400px)]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-4 pt-24">
+      <h1 class="text-4xl font-bold text-white">
+        Equine Forage & Bedding Supply
+      </h1>
+      <p class="mt-4 text-white max-w-2xl mx-auto">
+        Supplying hay, haylage and straw bedding grown with care and delivered
+        with reliability to yards, liveries and equine businesses.
+      </p>
+      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+        <a
+          href="#enquiry"
+          class="bg-lime-300 text-green-900 font-medium px-6 py-2 rounded-full"
+        >
+          Enquire Now
+        </a>
+        <a
+          href="tel:+443033094226"
+          class="border border-lime-300 text-lime-300 font-medium px-6 py-2 rounded-full"
+        >
+          +44 3033 094226
+        </a>
+      </div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto mt-16 px-4">
+      <img
+        src="https://placehold.co/900x400?text=Forage+in+Field"
+        alt="Haylage bales in a field"
+        class="rounded-2xl shadow-lg object-cover w-full aspect-video"
+      />
+    </div>
+  </div>
+
+  <section class="mt-32 px-4">
+    <div class="max-w-6xl mx-auto space-y-20">
+      <!-- Premium Forage -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img
+          src="https://placehold.co/500x300?text=Forage"
+          alt="Forage"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-green-800 mb-4">
+            Premium Equine Forage and Bedding
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            At TSH Services, we specialise in the production and supply of
+            high-quality forage and bedding for the equine industry. With a
+            passion for horses and years of agricultural expertise, we pride
+            ourselves on delivering consistent, reliable products you can trust.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-green-800 font-semibold underline hover:text-green-600 transition"
+          >
+            Enquire now →
+          </a>
+        </div>
+      </div>
+
+      <!-- Hay and Haylage -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-green-800 mb-4">
+            Hay and Haylage – Consistency from the Ground Up
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Our hay and haylage are carefully grown from specially selected seed
+            lays, ensuring optimal nutritional value, palatability, and
+            consistency. From sowing to harvest, we manage every step of the
+            process to produce forage that supports equine health and
+            performance all year round.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-green-800 font-semibold underline hover:text-green-600 transition"
+          >
+            Enquire now →
+          </a>
+        </div>
+        <img
+          src="https://placehold.co/500x300?text=Hay+%26+Haylage"
+          alt="Hay and Haylage"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+      </div>
+
+      <!-- Straw Bedding -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <img
+          src="https://placehold.co/500x300?text=Straw+Bedding"
+          alt="Straw Bedding"
+          class="rounded-xl shadow-md w-full md:w-1/2 object-cover"
+        />
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-bold text-green-800 mb-4">
+            Straw Bedding – Clean, Dry, and High Quality
+          </h3>
+          <p class="text-gray-700 text-base leading-relaxed">
+            Our premium straw bedding is a byproduct of our own barley and wheat
+            harvests. It's processed and baled with care to ensure it's clean,
+            dry, and ultimately high quality—offering a comfortable and
+            absorbent bedding solution for all types of horses and stables.
+          </p>
+          <a
+            href="#enquiry"
+            class="inline-block mt-4 text-green-800 font-semibold underline hover:text-green-600 transition"
+          >
+            Enquire now →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquiry" class="mt-32 px-4">
+    <div
+      class="max-w-4xl mx-auto bg-white border border-green-800 rounded-2xl shadow-lg p-8 md:p-12"
+    >
+      <div class="text-center mb-8">
+        <h3 class="text-2xl font-bold text-green-900 mb-2">
+          Stay Connected & Enquire
+        </h3>
+        <p class="text-gray-700 max-w-2xl mx-auto">
+          Follow us on socials for updates and get in touch directly using the
+          form below.
+        </p>
+      </div>
+
+      <div class="flex flex-col lg:flex-row gap-12 items-start">
+        <!-- Left: QR & Socials -->
+        <div class="flex-1 text-center lg:text-left">
+          <img
+            src="/qr-code.png"
+            alt="QR code linking to our socials"
+            class="w-40 h-40 mx-auto lg:mx-0 mb-4 border border-green-800 rounded-md shadow-sm"
+          />
+          <p class="text-gray-700 mb-2">Scan to follow us:</p>
+          <div
+            class="flex justify-center lg:justify-start gap-4 text-green-800 font-semibold"
+          >
+            <a href="https://facebook.com" target="_blank" rel="noopener"
+              >Facebook</a
+            >
+            <span>·</span>
+            <a href="https://tiktok.com" target="_blank" rel="noopener"
+              >TikTok</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: Enquiry Form -->
+        <div class="flex-1 w-full">
+          <form method="POST" action="#" class="space-y-5">
+            <div>
+              <label
+                for="email"
+                class="block text-sm font-medium text-green-900 mb-1"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+
+            <div>
+              <label
+                for="phone"
+                class="block text-sm font-medium text-green-900 mb-1"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              />
+            </div>
+
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-green-900 mb-1"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+                class="w-full px-4 py-2 border border-green-800 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-green-800 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition"
+            >
+              Submit Enquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

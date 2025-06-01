@@ -1,6 +1,7 @@
 ---
 import Header from "@/components/Header.astro";
 import "../styles/global.css";
+import Footer from "@/components/Footer.astro";
 
 export interface Props {
   title?: string
@@ -9,6 +10,7 @@ export interface Props {
   ogTitle?: string
   ogDescription?: string
   ogImage?: string
+  accent: string
 }
 
 const businessName = 'TSH Services'
@@ -20,6 +22,7 @@ const {
   ogTitle = title,
   ogDescription = description,
   ogImage,
+  accent,
 } = Astro.props
 ---
 
@@ -43,9 +46,10 @@ const {
     <link rel="icon" href="/favicon.svg" />
   </head>
   <body class="min-h-screen bg-white text-gray-900 antialiased">
-    <Header />
+    <Header accent={accent} />
     <main class="min-h-screen flex flex-col">
       <slot />
     </main>
+    <Footer accent={accent} />
   </body>
 </html>

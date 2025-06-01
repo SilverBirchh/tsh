@@ -14,8 +14,6 @@ interface Props {
 }
 
 export const Sheet = ({ trigger, description, title }: Props) => {
-  console.log({ description, title, trigger });
-  
   return (
   <BaseSheet>
     <SheetTrigger id="menu" aria-label="Open Menu">

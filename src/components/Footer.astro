@@ -1,0 +1,55 @@
+---
+import { Icon } from 'astro-icon/components'
+
+export interface Props {
+  accent: string
+}
+
+const { accent } = Astro.props;
+---
+
+<footer class="bg-white  text-gray-700  border-t-4  mt-16" style={{ borderColor: accent }}>
+  <div class="max-w-7xl mx-auto px-6 py-12 grid gap-8 md:grid-cols-3">
+    <!-- Brand / About -->
+    <div>
+      <h2 class="text-lg font-bold uppercase" style={{ color: accent }}>TSH Services</h2>
+      <p class="mt-2 text-sm">
+        Supplying equine forage, haylage, chipping potatoes and cooking oil to businesses across the UK.
+      </p>
+    </div>
+
+    <!-- Navigation -->
+    <div>
+      <h3 class="text-md font-semibold mb-3">Navigation</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="/" class="hover:underline">Home</a></li>
+        <li><a href="/equine" class="hover:underline">Equine Services</a></li>
+        <li><a href="/chipping" class="hover:underline">Potatoes & Cooking Oil</a></li>
+        <li><a href="/about" class="hover:underline">About</a></li>
+        <li><a href="/contact" class="hover:underline">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact / Social -->
+    <div>
+      <h3 class="text-md font-semibold mb-3">Contact</h3>
+      <p class="text-sm mb-2">Phone: <a href="tel:+443033094226" class="hover:underline">+44 3033 094226</a></p>
+      <p class="text-sm mb-4">Email: <a href="mailto:info@tshservices.co.uk" class="hover:underline">info@tshservices.co.uk</a></p>
+      <div class="flex gap-4 mt-4">
+        <a href="#" aria-label="Instagram">
+          <Icon name="lucide:instagram" class="w-5 h-5" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <Icon name="simple-icons:tiktok" class="w-5 h-5" />
+        </a>
+        <a href="#" aria-label="Instagram">
+          <Icon name="simple-icons:facebook" class="w-5 h-5" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center text-xs py-4 bg-gray-100 text-gray-500 ">
+    © {new Date().getFullYear()} TSH Services. All rights reserved.
+  </div>
+</footer>
