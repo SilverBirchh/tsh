@@ -1,0 +1,60 @@
+---
+import { Sheet } from "@/components/Sheet";
+import { Icon } from "astro-icon/components";
+---
+
+<header class="w-full flex justify-center bg-transparent">
+  <div
+    class="w-full max-w-7xl bg-green-800 text-white px-6 py-3 flex items-center justify-between"
+  >
+    <div class="flex items-center gap-6">
+      <a
+        href="/"
+        class="flex items-center gap-2 font-bold text-white text-sm sm:text-base"
+      >
+        TSH Services
+      </a>
+      <nav class="hidden md:flex gap-5 text-sm">
+        <a href="/equine" class="hover:underline">Equine Services</a>
+        <a href="/chipping" class="hover:underline">Potatoes & Cooking Oil</a>
+      </nav>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#" aria-label="Instagram">
+          <Icon name="lucide:instagram" class="w-4 h-4" />
+        </a>
+      </div>
+
+      <!-- Mobile Sheet menu -->
+      <div class="block md:hidden">
+        <Sheet client:idle>
+          <Icon
+            slot="trigger"
+            name="radix-icons:hamburger-menu"
+            class="w-6 h-6 text-white"
+          />
+          <div
+            slot="description"
+            class="flex flex-col gap-5 text-foreground text-lg mt-5 w-full justify-center items-center font-bold"
+          >
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/equine" class="hover:underline">Equine Services</a>
+            <a href="/chipping" class="hover:underline"
+              >Potatoes & Cooking Oil</a
+            >
+            <a href="/about" class="hover:underline">About</a>
+            <a href="/contact" class="hover:underline">Contact</a>
+
+            <div class="mt-6 flex gap-4">
+              <a href="#" aria-label="Instagram">
+                <Icon name="radix-icons:instagram-logo" class="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </Sheet>
+      </div>
+    </div>
+  </div>
+</header>

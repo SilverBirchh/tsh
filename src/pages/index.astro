@@ -1,16 +1,16 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="TSH Services | Forage, Bedding & Produce Supply"
+  description="TSH Services delivers top-quality forage, bedding, chipping potatoes and cooking oil to horse owners and takeaway shops."
+>
+  <section class="py-16 px-4 text-center">
+    <h1 class="text-4xl font-bold mb-4">Welcome to TSH Services</h1>
+    <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+      We provide high-quality hay, haylage, bedding, chipping potatoes and
+      cooking oil to support equine businesses and food outlets.
+    </p>
+  </section>
+</BaseLayout>

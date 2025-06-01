@@ -1,0 +1,51 @@
+---
+import Header from "@/components/Header.astro";
+import "../styles/global.css";
+
+export interface Props {
+  title?: string
+  description?: string
+  canonical?: string
+  ogTitle?: string
+  ogDescription?: string
+  ogImage?: string
+}
+
+const businessName = 'TSH Services'
+
+const {
+  title = `${businessName} | Agricultural and Supply Services`,
+  description = 'TSH Services supplies equine forage, bedding, chipping potatoes, and cooking oil to horse owners, fish and chip shops, and more.',
+  canonical = Astro.url.href,
+  ogTitle = title,
+  ogDescription = description,
+  ogImage,
+} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <link rel="icon" href="/favicon.svg" />
+  </head>
+  <body class="min-h-screen bg-white text-gray-900 antialiased">
+    <Header />
+    <main class="min-h-screen flex flex-col">
+      <slot />
+    </main>
+  </body>
+</html>
