@@ -8,7 +8,7 @@ import robotsTxt from 'astro-robots-txt';
 import icon from 'astro-icon';
 
 import react from '@astrojs/react';
-
+ // 715999c9-b4ab-47eb-94f1-626815209b2d
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
